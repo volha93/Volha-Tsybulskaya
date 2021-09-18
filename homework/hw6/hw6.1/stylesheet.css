@@ -1,9 +1,15 @@
-p {
-    line-height: 100%;
+#navigation ul {
+    margin 0;
+    padding 0;
 }
-img:nth-of-type(odd) {
-    float: right}
-img:nth-of-type(even) {
-    float: left;
-    margin: 2px;
+
+#navigation ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li:not(first-child):after {
+    content: url('red line.png');
+    color: #af0007;
+    margin: 0 auto;
 }
