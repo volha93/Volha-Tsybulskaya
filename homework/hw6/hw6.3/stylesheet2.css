@@ -1,0 +1,29 @@
+body{
+    color: blue;
+}
+
+b::before{ content: url('extref.png')
+}
+
+
+a:not([href^='https://']):not([href])
+{
+    font-style: normal;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+span{
+    color: darkgreen;
+    font-style: normal;
+}
+
+p:first-of-type{
+    color: red;
+    font-style: normal;
+    font-weight: bold;
+}
+p:last-of-type{
+    font-style: italic;
+}

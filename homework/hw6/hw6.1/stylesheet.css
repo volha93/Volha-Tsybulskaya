@@ -1,0 +1,9 @@
+p {
+    line-height: 100%;
+}
+img:nth-of-type(odd) {
+    float: right}
+img:nth-of-type(even) {
+    float: left;
+    margin: 2px;
+}
