@@ -1,6 +1,6 @@
 #navigation ul {
-    margin 0;
-    padding 0;
+    margin: 0;
+    padding: 0;
 }
 
 #navigation ul li {
@@ -12,4 +12,5 @@
     content: url('red line.png');
     color: #af0007;
     margin: 0 auto;
+    padding: 12px 3px
 }
