@@ -1,5 +1,5 @@
 body {
-    max-width: 900px; /* ограничение максимальной ширины  */
+
     margin: 0 auto;
 }
 
@@ -17,21 +17,22 @@ body div {
 }
 
 .left-sidebar {
-    width: 40%;
-    background: #e8e798;
-    margin-left: -185px;
+
+
+    background: red;
+    margin-left: 0px;
     float: left;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .main content {
-    width: 100%
+    width: 80%
 }
 
 .content {
-    float: right;
-    width: 80%;
+    'float: right;
+    'width: 80%;
 }
 
 
