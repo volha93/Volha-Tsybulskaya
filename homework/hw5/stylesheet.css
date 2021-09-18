@@ -19,6 +19,7 @@ body div {
 .left-sidebar {
     width: 40%;
     background: #e8e798;
+    margin-left: -185px;
     float: left;
     text-overflow: ellipsis;
     overflow: hidden;
