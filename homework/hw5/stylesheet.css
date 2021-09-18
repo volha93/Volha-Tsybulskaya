@@ -17,11 +17,15 @@ body div {
 }
 
 .left-sidebar {
-    width: 20%;
+    width: 40%;
     background: #e8e798;
     float: left;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.main content {
+    width: 100%
 }
 
 .content {
