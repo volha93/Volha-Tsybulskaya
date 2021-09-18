@@ -1,53 +1,37 @@
 body {
-    background: white;
-    color:#000;
-    font-family: "Roboto Light", serif;
-    font-size: 14px;
+    max-width: 900px; /* ограничение максимальной ширины  */
+    margin: 0 auto;
 }
 
-#header {
-    background: #af0007;
-    text-align: center;
-    color: gold;
-    padding-top: 10px;
-    font-size: 10px;
-    padding-bottom: 10px
+body div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
-#container {
-    background: white;
-    margin: auto auto;
-    text-align: center;
-    width: 80%;
-    'height: 500px;
+.header {
+    background: #5d93b9;
+    padding: 5px;
+    color: #0000ef
 }
 
-#menu {
-    background: white;
-    margin-left: auto;
-    position: fixed;
+.left-sidebar {
+    width: 20%;
+    background: #e8e798;
     float: left;
-    width: 160px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
-#content {
-    background: white;
+
+.content {
     float: right;
     width: 80%;
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-bottom: 20px;
-    'height: 300px;
 }
 
-#clear {
+
+.footer {
+    background: #5d93b9;
     clear: both;
-}
-
-#footer {
-    background: #af0007;
-    text-align: center;
-    color: gold;
-    padding-top: 10px;
-    font-size: 10px;
-    padding-bottom: 10px
+    color: #0000ef;
 }
