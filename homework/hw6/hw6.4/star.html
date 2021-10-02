@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=UTF-8>
+  <title>rating</title>
+  <style>
+    .star-rating__stars {
+      position: relative;
+      height: 5rem;
+      width: 25rem;
+      background: url(img/star0.png);
+      background-size: 5rem 5rem;
+    }
+
+    .star-rating__label {
+      position: absolute;
+      height: 100%;
+      background-size: 5rem 5rem;
+    }
+
+    .star-rating__input {
+      margin: 0;
+      position: absolute;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    .star-rating__stars .star-rating__label:nth-of-type(1) {
+      z-index: 5;
+      width: 20%;
+    }
+
+    .star-rating__stars .star-rating__label:nth-of-type(2) {
+      z-index: 4;
+      width: 40%;
+    }
+
+    .star-rating__stars .star-rating__label:nth-of-type(3) {
+      z-index: 3;
+      width: 60%;
+    }
+
+    .star-rating__stars .star-rating__label:nth-of-type(4) {
+      z-index: 2;
+      width: 80%;
+    }
+
+    .star-rating__stars .star-rating__label:nth-of-type(5) {
+      z-index: 1;
+      width: 100%;
+    }
+
+    .star-rating__input:checked + .star-rating__label,
+    .star-rating__input:focus + .star-rating__label,
+    .star-rating__label:hover {
+      background-image: url(img/star1.png);
+    }
+
+    .star-rating__label:hover ~ .star-rating__label {
+      background-image: url(img/star0.png);
+    }
+
+    .star-rating__input:focus ~ .star-rating__focus {
+      position: absolute;
+      top: -.25em;
+      right: -.25em;
+      bottom: -.25em;
+      left: -.25em;
+      outline: 0.25rem solid;
+    }
+  </style>
+</head>
+<body>
+<div class="star-rating">
+  <div class="star-rating__stars">
+    <input class="star-rating__input" type="radio" name="rating" value="1" id="rating-1"/>
+    <label class="star-rating__label" for="rating-1" aria-label="One"></label>
+    <input class="star-rating__input" type="radio" name="rating" value="2" id="rating-2"/>
+    <label class="star-rating__label" for="rating-2" aria-label="Two"></label>
+    <input class="star-rating__input" type="radio" name="rating" value="3" id="rating-3"/>
+    <label class="star-rating__label" for="rating-3" aria-label="Three"></label>
+    <input class="star-rating__input" type="radio" name="rating" value="4" id="rating-4"/>
+    <label class="star-rating__label" for="rating-4" aria-label="Four"></label>
+    <input class="star-rating__input" type="radio" name="rating" value="5" id="rating-5"/>
+    <label class="star-rating__label" for="rating-5" aria-label="Five"></label>
+    <div class="star-rating__focus"></div>
+  </div>
+</div>
+
+</body>
+</html>
